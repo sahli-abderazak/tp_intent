@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity_td2_ex2_2">
+    <RadioGroup
+        android:id="@+id/groupR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true">
+        <RadioButton
+            android:id="@+id/rouge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rouge"/>
+        <RadioButton
+            android:id="@+id/vert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vert"/>
+        <RadioButton
+            android:id="@+id/bleu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bleu"/>
+        <RadioButton
+            android:id="@+id/jaune"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jaune"/>
+
+    </RadioGroup>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Choisir"
+        android:layout_below="@id/groupR"
+        android:onClick="choisir"/>
+</RelativeLayout>
